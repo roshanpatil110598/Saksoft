@@ -1,0 +1,47 @@
+package com.sakoft.demo.ServiceImpl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sakoft.demo.Model.Customer;
+import com.sakoft.demo.Repo.Repo;
+import com.sakoft.demo.ServiceInterface.ServiceI;
+@Service
+public class ServiceImpl implements ServiceI {
+
+	@Autowired
+	Repo rep;
+	
+	@Override
+	public Customer saveDataCustomer(Customer custs)
+	{
+		Customer cus=rep.save(custs);
+		return cus;
+	}
+
+	@Override
+	public List<Customer> getCustomerData() {
+		List<Customer> list=(List<Customer>) rep.findAll();
+		return list;
+	}
+
+	@Override
+	public Customer updateData(Customer cus) {
+		Customer cusom=rep.save(cus);
+		return cusom;
+	}
+
+	@Override
+	public void deleteData(int id) {
+		rep.deleteById(id);
+	}
+
+	@Override
+	public List<Customer> FindbyName(String firstname) {
+		List<Customer> custom=rep.findByFirstname(firstname);
+		return custom;
+	}
+
+}

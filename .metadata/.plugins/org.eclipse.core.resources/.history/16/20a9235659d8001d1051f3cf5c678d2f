@@ -1,0 +1,19 @@
+package com.sakoft.demo.ServiceInterface;
+
+import java.util.List;
+
+import com.sakoft.demo.Model.Customer;
+
+public interface ServiceI {
+
+	Customer saveDataCustomer(Customer custs);
+
+	List<Customer> getCustomerData();
+
+	Customer updateData(Customer cus);
+
+	void deleteData(int id);
+
+	List<Customer> FindbyName(String firstname);
+
+}

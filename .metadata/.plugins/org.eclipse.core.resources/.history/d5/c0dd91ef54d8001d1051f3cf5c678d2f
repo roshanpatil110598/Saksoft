@@ -1,0 +1,9 @@
+package com.sakoft.demo.ServiceImpl;
+
+import org.springframework.stereotype.Service;
+
+import com.sakoft.demo.ServiceInterface.ServiceI;
+@Service
+public class ServiceImpl implements ServiceI {
+
+}

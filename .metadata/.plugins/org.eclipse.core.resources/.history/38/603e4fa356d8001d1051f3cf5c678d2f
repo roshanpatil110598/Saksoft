@@ -1,0 +1,9 @@
+package com.sakoft.demo.ServiceInterface;
+
+import com.sakoft.demo.Model.Customer;
+
+public interface ServiceI {
+
+	Customer saveDataCustomer(Customer custs);
+
+}

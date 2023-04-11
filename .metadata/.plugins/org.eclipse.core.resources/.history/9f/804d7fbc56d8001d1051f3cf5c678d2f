@@ -1,0 +1,22 @@
+package com.sakoft.demo.ServiceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.sakoft.demo.Model.Customer;
+import com.sakoft.demo.Repo.Repo;
+import com.sakoft.demo.ServiceInterface.ServiceI;
+@Service
+public class ServiceImpl implements ServiceI {
+
+	@Autowired
+	Repo rep;
+	
+	@Override
+	public Customer saveDataCustomer(Customer custs)
+	{
+		Customer cus=rep.save(custs);
+		return cus;
+	}
+
+}

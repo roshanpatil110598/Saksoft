@@ -1,0 +1,19 @@
+package com.sakoft.demo.HomeController;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.sakoft.demo.ServiceInterface.ServiceI;
+
+@RestController
+public class HomeController
+{
+
+	@Autowired
+	ServiceI ser;
+	
+	
+	
+	
+	
+}

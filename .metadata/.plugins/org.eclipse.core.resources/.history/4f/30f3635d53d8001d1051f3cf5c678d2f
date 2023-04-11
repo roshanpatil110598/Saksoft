@@ -1,0 +1,5 @@
+package com.sakoft.demo.Repo;
+
+public interface Repo {
+
+}

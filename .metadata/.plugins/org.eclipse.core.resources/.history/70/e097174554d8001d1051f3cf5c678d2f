@@ -1,0 +1,7 @@
+package com.sakoft.demo.ServiceImpl;
+
+import com.sakoft.demo.ServiceInterface.ServiceI;
+
+public class ServiceImpl implements ServiceI {
+
+}

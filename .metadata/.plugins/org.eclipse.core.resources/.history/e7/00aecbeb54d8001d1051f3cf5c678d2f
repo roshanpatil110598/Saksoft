@@ -1,0 +1,5 @@
+package com.sakoft.demo.ServiceInterface;
+
+public interface ServiceI {
+
+}
